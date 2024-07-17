@@ -30,14 +30,14 @@ def patient():
 def chat_doctor():
     # receive question from user 
     question = request.get_json().get("message")
-    message = {"answer": "I received you message. I will reply to you soon."}
+    message = {"answer": "I received your message. I will reply to you soon.."}
     return (message)
 
 @app.route("/chat_patient", methods=['POST'])
 def chat_patient():
     # receive question from user 
     question = request.get_json().get("message")
-    message = {"answer": "I received you message. I will reply to you soon."}
+    message = {"answer": "I received your message. I will reply to you soon."}
     return (message)
 
 if __name__ == '__main__':
